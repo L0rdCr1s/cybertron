@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">B127</string>
+    <string name="helloText">Cybertron</string>
+    <string name="imageDescription">show banner on home page</string>
+</resources>

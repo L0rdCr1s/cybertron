@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:contentDescription="@string/imageDescription"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/homePageHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/proxima_nova_light"
+        android:text="@string/helloText"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/large_heading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <ImageView
+        android:id="@+id/homeBackgroundImage"
+        android:layout_width="260dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/homePageHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014"
+        app:srcCompat="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/homeBackgroundImage1"
+        android:layout_width="238dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="12dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/homePageHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/home1" />
+
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="110dp"
+        android:background="@drawable/rounded_edge"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237">
+
+        <ImageView
+            android:id="@+id/bumblebeeImage"
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/model1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/bumblebeeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Bumblebee"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/large_heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/bumblebeeCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingLeft="15dp"
+                android:text="1967 Volkswagen Beetle"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bumblebeeName" />
+
+            <TextView
+                android:id="@+id/bumblebeeTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:paddingLeft="15dp"
+                android:text="Autobot"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bumblebeeCar"
+                app:layout_constraintVertical_bias="0.26999998" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="110dp"
+        android:background="@drawable/rounded_edge"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <ImageView
+            android:id="@+id/megatronImage"
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/megatron" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/megatronName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Megatron"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/large_heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/megatronCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingLeft="15dp"
+                android:text="Lamborghini aventador"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megatronName" />
+
+            <TextView
+                android:id="@+id/megatronTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:paddingLeft="15dp"
+                android:text="Decepticon"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megatronCar"
+                app:layout_constraintVertical_bias="0.26999998" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="110dp"
+        android:background="@drawable/rounded_edge"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67">
+
+        <ImageView
+            android:id="@+id/megatronImage1"
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/optimus" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/megatronName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Optimus prime"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/large_heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/megatronCar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingLeft="15dp"
+                android:text="1984 Freightliner Semi"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megatronName1" />
+
+            <TextView
+                android:id="@+id/megatronTeam4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:paddingLeft="15dp"
+                android:text="Autobot"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megatronCar1"
+                app:layout_constraintVertical_bias="0.26999998" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="110dp"
+        android:background="@drawable/rounded_edge"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89">
+
+        <ImageView
+            android:id="@+id/megatronImage2"
+            android:layout_width="179dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/rename" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/megatronName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="Crosshairs"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/large_heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/megatronCar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/proxima_nova_light"
+                android:paddingLeft="15dp"
+                android:text="Chevrolet Corvette Stingray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megatronName2" />
+
+            <TextView
+                android:id="@+id/megatronTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_semibold"
+                android:paddingLeft="15dp"
+                android:text="Autobot"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/heading"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/megatronCar2"
+                app:layout_constraintVertical_bias="0.26999998" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
