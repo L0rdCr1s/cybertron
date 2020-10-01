@@ -2,9 +2,9 @@
 
 concept mobile application about cybertron species, it's a kotlin app created as exercise while i was learning mobile development with kotlin.
 
-|                                                    Android screenshot                                                     |
-| :-----------------------------------------------------------------------------------------------------------------------: |
-| ![2020-09-30 21 09](https://user-images.githubusercontent.com/37629329/94777765-ae744800-03cc-11eb-8086-4b8a9a15491a.png) |
+|             Android screenshot              |
+| :-----------------------------------------: |
+| <img src="./assets/shot.png" width="250" /> |
 
 ---
 
