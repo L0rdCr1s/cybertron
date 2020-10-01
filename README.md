@@ -4,7 +4,7 @@ concept mobile application about cybertron species, it's a kotlin app created as
 
 |             Android screenshot              |
 | :-----------------------------------------: |
-| <img src="./assets/shot.png" width="250" /> |
+| <img src="./assets/shot.png" width="300" /> |
 
 ---
 
